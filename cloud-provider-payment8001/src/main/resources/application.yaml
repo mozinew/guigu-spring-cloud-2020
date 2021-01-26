@@ -1,5 +1,22 @@
+server:
+  port: 8001
+
 spring:
   application:
     name: payment
-server:
-  port: 8001
+  datasource:
+    url: jdbc:mysql://114.67.82.110:13306/gg_spring_cloud?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai
+    driver-class-name: org.gjt.mm.mysql.Driver
+    username: root
+    password: 123456
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.tengol.course.spring.cloud.payment.entity
+  configuration:
+    use-actual-param-name: true
+    map-underscore-to-camel-case: true
+

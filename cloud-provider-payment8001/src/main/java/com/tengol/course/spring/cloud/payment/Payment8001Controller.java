@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Payment8001Controller
+ * 支付模块控制器
  *
  * @author dongrui
  * @date 2021/1/16 17:31
