@@ -1,4 +1,4 @@
-package com.tengol.course.spring.cloud.payment.controller;
+package com.tengol.course.spring.cloud.payment.web;
 
 import com.tengol.course.spring.cloud.payment.entity.CommonResult;
 import com.tengol.course.spring.cloud.payment.entity.Payment;
