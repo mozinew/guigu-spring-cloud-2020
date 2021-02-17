@@ -1,0 +1,9 @@
+server:
+  port: 80
+spring:
+  application:
+    name: order80
+  jackson:
+    default-property-inclusion: non_null
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8

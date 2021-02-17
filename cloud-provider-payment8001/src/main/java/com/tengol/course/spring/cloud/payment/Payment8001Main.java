@@ -10,9 +10,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2021/1/16 17:31
  */
 @SpringBootApplication
-public class Payment8001Controller {
+public class Payment8001Main {
     public static void main(String[] args) {
-        SpringApplication.run(Payment8001Controller.class, args);
+        SpringApplication.run(Payment8001Main.class, args);
         System.out.println("Payment8001Controller start successfully ......");
     }
 }
