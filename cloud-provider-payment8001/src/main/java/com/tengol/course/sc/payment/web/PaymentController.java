@@ -1,8 +1,8 @@
-package com.tengol.course.spring.cloud.payment.web;
+package com.tengol.course.sc.payment.web;
 
-import com.tengol.course.spring.cloud.payment.entity.CommonResult;
-import com.tengol.course.spring.cloud.payment.entity.Payment;
-import com.tengol.course.spring.cloud.payment.service.PaymentService;
+import com.tengol.course.sc.common.entity.CommonResult;
+import com.tengol.course.sc.common.entity.Payment;
+import com.tengol.course.sc.payment.service.PaymentService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;

@@ -1,6 +1,7 @@
-package com.tengol.course.spring.cloud.payment.service;
+package com.tengol.course.sc.payment.service;
 
-import com.tengol.course.spring.cloud.payment.entity.Payment;
+
+import com.tengol.course.sc.common.entity.Payment;
 
 /**
  * PaymentService

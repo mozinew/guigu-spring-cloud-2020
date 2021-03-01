@@ -1,7 +1,7 @@
-package com.tengol.course.spring.cloud.order.web;
+package com.tengol.course.sc.order.web;
 
-import com.tengol.course.spring.cloud.order.entity.CommonResult;
-import com.tengol.course.spring.cloud.order.entity.Payment;
+import com.tengol.course.sc.common.entity.CommonResult;
+import com.tengol.course.sc.common.entity.Payment;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;

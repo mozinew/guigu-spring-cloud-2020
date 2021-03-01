@@ -1,4 +1,4 @@
-package com.tengol.course.spring.cloud.order.config;
+package com.tengol.course.sc.order.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

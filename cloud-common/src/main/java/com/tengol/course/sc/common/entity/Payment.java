@@ -1,4 +1,4 @@
-package com.tengol.course.spring.cloud.order.entity;
+package com.tengol.course.sc.common.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

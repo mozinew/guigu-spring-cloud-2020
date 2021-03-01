@@ -1,8 +1,8 @@
-package com.tengol.course.spring.cloud.payment.service.impl;
+package com.tengol.course.sc.payment.service.impl;
 
-import com.tengol.course.spring.cloud.payment.entity.Payment;
-import com.tengol.course.spring.cloud.payment.mapper.PaymentMapper;
-import com.tengol.course.spring.cloud.payment.service.PaymentService;
+import com.tengol.course.sc.common.entity.Payment;
+import com.tengol.course.sc.payment.mapper.PaymentMapper;
+import com.tengol.course.sc.payment.service.PaymentService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

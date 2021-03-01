@@ -1,4 +1,4 @@
-package com.tengol.course.spring.cloud.order;
+package com.tengol.course.sc.order;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;

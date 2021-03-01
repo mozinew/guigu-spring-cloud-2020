@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tengol.course.spring.cloud.payment.mapper.PaymentMapper">
-    <resultMap id="BaseResultMap" type="com.tengol.course.spring.cloud.payment.entity.Payment">
+<mapper namespace="com.tengol.course.sc.payment.mapper.PaymentMapper">
+    <resultMap id="BaseResultMap" type="com.tengol.course.sc.common.entity.Payment">
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="serial" jdbcType="VARCHAR" property="serial"/>
     </resultMap>
@@ -21,14 +21,14 @@
         where id = #{id,jdbcType=INTEGER}
     </delete>
     <insert id="insert" keyColumn="id" keyProperty="id"
-            parameterType="com.tengol.course.spring.cloud.payment.entity.Payment"
+            parameterType="com.tengol.course.sc.common.entity.Payment"
             useGeneratedKeys="true">
         insert into payment (serial)
         values (#{serial,jdbcType=VARCHAR})
     </insert>
 
     <update id="updateByPrimaryKey"
-            parameterType="com.tengol.course.spring.cloud.payment.entity.Payment">
+            parameterType="com.tengol.course.sc.common.entity.Payment">
         update payment
         set serial = #{serial,jdbcType=VARCHAR}
         where id = #{id,jdbcType=BIGINT}

@@ -1,6 +1,6 @@
-package com.tengol.course.spring.cloud.payment.mapper;
+package com.tengol.course.sc.payment.mapper;
 
-import com.tengol.course.spring.cloud.payment.entity.Payment;
+import com.tengol.course.sc.common.entity.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
