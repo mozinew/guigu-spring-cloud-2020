@@ -12,6 +12,11 @@
     <artifactId>cloud-provider-payment8001</artifactId>
 
     <dependencies>
+        <!-- Eureka Client -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.tengol.course.sc</groupId>
             <artifactId>cloud-common</artifactId>
