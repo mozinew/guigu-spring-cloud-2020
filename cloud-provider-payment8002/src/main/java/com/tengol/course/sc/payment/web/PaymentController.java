@@ -1,6 +1,5 @@
 package com.tengol.course.sc.payment.web;
 
-import com.tengol.course.sc.common.dto.PaymentDTO;
 import com.tengol.course.sc.common.entity.CommonResult;
 import com.tengol.course.sc.common.entity.Payment;
 import com.tengol.course.sc.payment.service.PaymentService;
@@ -14,7 +13,7 @@ import java.util.Objects;
  * PaymentController
  *
  * @author dongrui
- * @date 2021/1/26 19:42
+ * @date 2021/3/7 11:34
  */
 @Slf4j
 @RestController
@@ -29,7 +28,7 @@ public class PaymentController {
     }
 
     @PostMapping("/create")
-    public CommonResult<PaymentDTO> create(@RequestBody Payment payment) {
+    public CommonResult<Payment> create(@RequestBody Payment payment) {
         int count = paymentService.create(payment);
         log.info("==== 插入结果：" + count);
 
@@ -44,9 +43,10 @@ public class PaymentController {
     public CommonResult<Payment> getPaymentById(@PathVariable("id") Long id) {
         Payment payment = paymentService.getPaymentById(id);
         if (Objects.nonNull(payment)) {
-            return new CommonResult<>(200, "查询成功，Server port : " + serverPort, payment);
+            return new CommonResult<>(200, "查询成功，Service port : " + serverPort, payment);
         } else {
             return new CommonResult<>(444, "没有对应记录，查询 ID：" + id);
         }
     }
 }
+

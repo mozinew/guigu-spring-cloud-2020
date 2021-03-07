@@ -1,0 +1,30 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    url: jdbc:mysql://114.67.82.110:13306/gg_spring_cloud?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai
+    driver-class-name: org.gjt.mm.mysql.Driver
+    username: root
+    password: 123456
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+mybatis:
+  mapper-locations: classpath:/com/tengol/course/sc/common/mapper/*Mapper.xml
+  type-aliases-package: com.tengol.course.sc.common.entity
+  configuration:
+    use-actual-param-name: true
+    map-underscore-to-camel-case: true
+eureka:
+  client:
+    # true - 将自己注册到 Eureka 中心
+    register-with-eureka: true
+    # true - 获取注册信息
+    fetch-registry: true
+    # 注册中心地址
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka

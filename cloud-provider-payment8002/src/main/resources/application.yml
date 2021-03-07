@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8002
 
 spring:
   application:
@@ -14,8 +14,8 @@ spring:
     time-zone: GMT+8
     default-property-inclusion: non_null
 mybatis:
-  mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.tengol.course.spring.cloud.payment.entity
+  mapper-locations: classpath:/com/tengol/course/sc/common/mapper/*Mapper.xml
+  type-aliases-package: com.tengol.course.sc.common.entity
   configuration:
     use-actual-param-name: true
     map-underscore-to-camel-case: true
